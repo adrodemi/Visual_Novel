@@ -1,0 +1,76 @@
+{
+  "frames": [
+    {
+      "id": "start",
+      "type": "Dialog",
+      "nextId": "start1",
+      "characterName": "Man",
+      "characterPosition": "right",
+      "spritePath": "Sprites/Man",
+      "text": "Привет! Готова начать приключение?"
+    },
+    {
+      "id": "start1",
+      "type": "Dialog",
+      "nextId": "choice1",
+      "characterName": "Woman",
+      "characterPosition": "left",
+      "spritePath": "Sprites/Woman",
+      "text": "Ага, сейчас только выберу, что буду делать"
+    },
+    {
+      "id": "choice1",
+      "type": "Choice",
+      "text": "Что будем делать?",
+      "options": [
+        { "title": "Пойти в лес", "nextFrameId": "choice2" },
+        { "title": "Пойти домой", "nextFrameId": "choice3" }
+      ]
+    },
+    {
+      "id": "choice2",
+      "type": "Choice",
+      "text": "Абсолютно уверена?",
+      "options": [
+        { "title": "Да", "nextFrameId": "forest" },
+        { "title": "Нет", "nextFrameId": "choice1" }
+      ]
+    },
+    {
+      "id": "choice3",
+      "type": "Choice",
+      "text": "Точно?",
+      "options": [
+        { "title": "Да", "nextFrameId": "end2" },
+        { "title": "Нет", "nextFrameId": "choice1" }
+      ]
+    },
+    {
+      "id": "forest",
+      "nextId": "end1",
+      "type": "Text",
+      "text": "Ты отправилась в лес, полный тайн и чудес."
+    },
+    {
+      "id": "end1",
+      "nextId": "chapter2",
+      "type": "Final",
+      "text": "Ты нашла странного мужчину в лесу. Конец главы"
+    },
+    {
+      "id": "end2",
+      "nextId": "start",
+      "type": "Final",
+      "text": "Ты ушла домой. Конец главы."
+    },
+    {
+      "id": "chapter2",
+      "type": "Dialog",
+      "nextId": "choice1",
+      "characterName": "Woman",
+      "characterPosition": "left",
+      "spritePath": "Sprites/Woman",
+      "text": "находится в разработке"
+    }
+  ]
+}
